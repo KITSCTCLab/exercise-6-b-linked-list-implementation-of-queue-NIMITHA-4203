@@ -13,6 +13,7 @@ class Queue:
     temp = Node(data)
     if self.head == None:
       self.head = temp
+      self.last = temp
       temp.next = None
     else:
       self.last.next = temp
